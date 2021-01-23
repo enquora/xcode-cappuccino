@@ -1,0 +1,15 @@
+/*
+ * ObjectiveJ.xcspec: Xcode file type for Objective-J
+ *
+ */
+
+(
+	{
+		Type = FileType;
+		Identifier = sourcecode.objj;
+		BasedOn = sourcecode;
+		Name = "Objective-J File";
+		Extensions = ( j );
+		Language = "xcode.lang.objj";
+	}
+)
