@@ -13,6 +13,7 @@
 		4115AE4525BD29DC0092C29D /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
 		4115AE4625BD29DC0092C29D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4115AE4725BD29DC0092C29D /* Plug-ins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Plug-ins"; sourceTree = "<group>"; };
+		4115AE4825BD32220092C29D /* Xcode.SourceCodeLanguage.Objective-J.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Xcode.SourceCodeLanguage.Objective-J.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -24,6 +25,7 @@
 				4115AE4625BD29DC0092C29D /* README.md */,
 				4115AE4525BD29DC0092C29D /* setup.sh */,
 				4115AE4325BD29DC0092C29D /* Specifications */,
+				4115AE4825BD32220092C29D /* Xcode.SourceCodeLanguage.Objective-J.plist */,
 				4115AE4425BD29DC0092C29D /* Xcode.SourceCodeLanguage.Objective-J.plist */,
 			);
 			sourceTree = "<group>";
