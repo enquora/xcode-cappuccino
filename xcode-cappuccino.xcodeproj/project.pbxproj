@@ -1,0 +1,83 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		4115AE4225BD29DC0092C29D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4115AE4325BD29DC0092C29D /* Specifications */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Specifications; sourceTree = "<group>"; };
+		4115AE4425BD29DC0092C29D /* Xcode.SourceCodeLanguage.Objective-J.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Xcode.SourceCodeLanguage.Objective-J.plist"; sourceTree = "<group>"; };
+		4115AE4525BD29DC0092C29D /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
+		4115AE4625BD29DC0092C29D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4115AE4725BD29DC0092C29D /* Plug-ins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Plug-ins"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4115AE3525BD28900092C29D = {
+			isa = PBXGroup;
+			children = (
+				4115AE4225BD29DC0092C29D /* LICENSE */,
+				4115AE4725BD29DC0092C29D /* Plug-ins */,
+				4115AE4625BD29DC0092C29D /* README.md */,
+				4115AE4525BD29DC0092C29D /* setup.sh */,
+				4115AE4325BD29DC0092C29D /* Specifications */,
+				4115AE4425BD29DC0092C29D /* Xcode.SourceCodeLanguage.Objective-J.plist */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		4115AE3625BD28900092C29D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+			};
+			buildConfigurationList = 4115AE3925BD28900092C29D /* Build configuration list for PBXProject "xcode-cappuccino" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4115AE3525BD28900092C29D;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		4115AE3A25BD28900092C29D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4115AE3B25BD28900092C29D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4115AE3925BD28900092C29D /* Build configuration list for PBXProject "xcode-cappuccino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4115AE3A25BD28900092C29D /* Debug */,
+				4115AE3B25BD28900092C29D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4115AE3625BD28900092C29D /* Project object */;
+}
