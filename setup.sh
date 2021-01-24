@@ -20,7 +20,9 @@ spec_dir="${xcode_path}/SharedFrameworks/SourceModel.framework/Versions/A/Resour
 
 # Copy the language specification to the specs directory
 cp Specifications/Objective-J.xclangspec $spec_dir
-#cp Specifications/Rust.xcspec $spec_dir
+
+# Xcode build specs file
+#cp Specifications/Objective-J.xcspec $spec_dir
 
 # Get language metadata directory
 metadata_dir="${xcode_path}/SharedFrameworks/SourceModel.framework/Versions/A/Resources/LanguageMetadata"
