@@ -11,7 +11,7 @@
 				<key>id</key>
 				<string>Xcode.FileDataType.Objective-J</string>
 				<key>localizedDescription</key>
-				<string>Objective-J Document</string>
+				<string>Objective-J Source</string>
 				<key>name</key>
 				<string>File type for Objective-J</string>
 				<key>point</key>
@@ -84,7 +84,7 @@
 				<key>id</key>
 				<string>Xcode.IDEKit.Inspector.FileIdentityAndType.public.objj-source</string>
 				<key>name</key>
-				<string>File Inspector Entry - Objective-J Document</string>
+				<string>File Inspector Entry - Objective-J Source</string>
 				<key>point</key>
 				<string>Xcode.IDEKit.FileInspectorTypeGroupEntry</string>
 				<key>version</key>
