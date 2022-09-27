@@ -14,12 +14,14 @@
 		4115AE4725BD29DC0092C29D /* Plug-ins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Plug-ins"; sourceTree = "<group>"; };
 		4115AE4825BD32220092C29D /* Xcode.SourceCodeLanguage.Objective-J.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Xcode.SourceCodeLanguage.Objective-J.plist"; sourceTree = "<group>"; };
 		4115AE4925BD328D0092C29D /* Xcode.SourceCodeLanguage.Objective-C.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Xcode.SourceCodeLanguage.Objective-C.plist"; sourceTree = "<group>"; };
+		419A55FF28504F1A00AE6D08 /* References.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = References.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		4115AE3525BD28900092C29D = {
 			isa = PBXGroup;
 			children = (
+				419A55FF28504F1A00AE6D08 /* References.md */,
 				4115AE4225BD29DC0092C29D /* LICENSE */,
 				4115AE4725BD29DC0092C29D /* Plug-ins */,
 				4115AE4625BD29DC0092C29D /* README.md */,

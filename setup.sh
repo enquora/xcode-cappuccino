@@ -50,7 +50,7 @@ echo "Copying the language specificaiton to $spec_dir"
 cp Specifications/Objective-J.xclangspec $spec_dir
 
 # Xcode build specs file
-#cp Specifications/Objective-J.xcspec $spec_dir
+cp Specifications/Objective-J.xcspec $spec_dir
 
 # Get language metadata directory
 metadata_dir="${xcode_path}/SharedFrameworks/SourceModel.framework/Versions/A/Resources/LanguageMetadata"
