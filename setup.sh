@@ -38,27 +38,38 @@ fi
 echo "Copying the IDE Plug-in to the plug-ins directory"
 cp -r Plug-ins/Objective-J.ideplugin $plugins_dir
 
+# Create Specifications directory if it doesn't exist
+specifications_dir=~/Library/Developer/Xcode/Specifications/
+if [ ! -d "$specifications_dir" ]; then
+    echo "Creating specifications directory at $specifications_dir"
+	mkdir $specifications_dir
+fi
+
+# Copy the IDE Plugin to the plug-ins directory
+echo "Copying the language specification to the specifications directory"
+cp -r Specifications/Objective-J.xclangspec $specifications_dir
+
 # Get the selected Xcode.app's path
-xcode_path=$(xcode-select -p)
-xcode_path=$(dirname $xcode_path)
+#xcode_path=$(xcode-select -p)
+#xcode_path=$(dirname $xcode_path)
 
 # Get Specifications directory
-spec_dir="${xcode_path}/SharedFrameworks/SourceModel.framework/Versions/A/Resources/LanguageSpecifications"
+#spec_dir="${xcode_path}/SharedFrameworks/SourceModel.framework/Versions/A/Resources/LanguageSpecifications"
 
 # Copy the language specification to the specs directory
-echo "Copying the language specificaiton to $spec_dir"
-cp Specifications/Objective-J.xclangspec $spec_dir
+#echo "Copying the language specification to $spec_dir"
+#cp Specifications/Objective-J.xclangspec $spec_dir
 
 # Xcode build specs file
-cp Specifications/Objective-J.xcspec $spec_dir
+#cp Specifications/Objective-J.xcspec $spec_dir
 
 # Get language metadata directory
-metadata_dir="${xcode_path}/SharedFrameworks/SourceModel.framework/Versions/A/Resources/LanguageMetadata"
+#metadata_dir="${xcode_path}/SharedFrameworks/SourceModel.framework/Versions/A/Resources/LanguageMetadata"
 
 # Copy the source code language plist to the metadata directory
-echo "Copying the source code language plist to $metadata_dir"
-cp Xcode.SourceCodeLanguage.Objective-J.plist $metadata_dir
+#echo "Copying the source code language plist to $metadata_dir"
+#cp Xcode.SourceCodeLanguage.Objective-J.plist $metadata_dir
 
-defaults read ${xcode_path}/Info DVTPlugInCompatibilityUUID
+#defaults read ${xcode_path}/Info DVTPlugInCompatibilityUUID
 
 echo "Please restart Xcode"
