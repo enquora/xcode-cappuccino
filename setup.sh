@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # For Xcode 11 and above
 
@@ -27,6 +27,13 @@ fi
 
 set -x
 
+# Get the selected Xcode.app's path
+# We may, in the future, simply update the compatibility UUID if plugin is installed already.
+xcode_path=$(xcode-select -p)
+xcode_path=$(dirname $xcode_path)
+
+defaults read ${xcode_path}/Info DVTPlugInCompatibilityUUID
+
 # Create plug-ins directory if it doesn't exist
 plugins_dir=~/Library/Developer/Xcode/Plug-ins/
 if [ ! -d "$plugins_dir" ]; then
@@ -48,28 +55,5 @@ fi
 # Copy the IDE Plugin to the plug-ins directory
 echo "Copying the language specification to the specifications directory"
 cp -r Specifications/Objective-J.xclangspec $specifications_dir
-
-# Get the selected Xcode.app's path
-#xcode_path=$(xcode-select -p)
-#xcode_path=$(dirname $xcode_path)
-
-# Get Specifications directory
-#spec_dir="${xcode_path}/SharedFrameworks/SourceModel.framework/Versions/A/Resources/LanguageSpecifications"
-
-# Copy the language specification to the specs directory
-#echo "Copying the language specification to $spec_dir"
-#cp Specifications/Objective-J.xclangspec $spec_dir
-
-# Xcode build specs file
-#cp Specifications/Objective-J.xcspec $spec_dir
-
-# Get language metadata directory
-#metadata_dir="${xcode_path}/SharedFrameworks/SourceModel.framework/Versions/A/Resources/LanguageMetadata"
-
-# Copy the source code language plist to the metadata directory
-#echo "Copying the source code language plist to $metadata_dir"
-#cp Xcode.SourceCodeLanguage.Objective-J.plist $metadata_dir
-
-#defaults read ${xcode_path}/Info DVTPlugInCompatibilityUUID
 
 echo "Please restart Xcode"
